@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title= @title || "Simple Sinatra CMS"
+    css:
+      body { font-family: "Helvetica Neue", sans-serif; }
+  body
+    h1
+      a href="/pages" Simple Sinatra CMS
+    == yield

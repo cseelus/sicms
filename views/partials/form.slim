@@ -1,0 +1,6 @@
+p
+  label for="title" Title:<br>
+  input.title type="text" name="page[title]" value="#{@page.title}" size="32"
+p
+  label for="content" Content:<br>
+  textarea.content name="page[content]" rows="12" cols="72" ==@page.content
