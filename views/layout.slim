@@ -2,9 +2,13 @@ doctype html
 html
   head
     title= @title || "Simple Sinatra CMS"
+    link rel="stylesheet" href="/views/assets/stylesheets/application.css"
     css:
       body { font-family: "Helvetica Neue", sans-serif; }
   body
-    h1
-      a href="/pages" Simple Sinatra CMS
-    == yield
+    h1.logo
+      .container
+        a href="/pages" Simple Sinatra CMS
+
+    .container
+      == yield
