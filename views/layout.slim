@@ -3,12 +3,23 @@ html
   head
     title= @title || "Simple Sinatra CMS"
     link rel="stylesheet" href="/views/assets/stylesheets/application.css"
-    css:
-      body { font-family: "Helvetica Neue", sans-serif; }
   body
+    #admin
+      nav 
+        ul
+          li
+            a href='/pages' Pages
+          - if admin?
+            == slim :admin
+            li
+              a href="/logout" Log out
+          - else
+              li
+                a href="/login" Login
+
     h1.logo
       .container
         a href="/pages" Simple Sinatra CMS
 
-    .container
+    main
       == yield

@@ -1,0 +1,7 @@
+li
+  a href='/pages/new' &#10011; Add a page
+- if @page
+  li
+    a href="/pages/#{@page.id}/edit" ✎ Edit this page
+  li
+    a href="/pages/delete/#{@page.id}" ✕ Delete this page 

@@ -11,8 +11,6 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     backports (3.6.0)
-    bootstrap-sass (3.2.0.2)
-      sass (~> 3.2)
     bson (2.3.0)
     builder (3.2.2)
     celluloid (0.16.0)
@@ -102,11 +100,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass (~> 3)
   guard-livereload
   mongoid
   rack-livereload
   redcarpet
-  sinatra
+  sass (~> 3.4)
+  sinatra (~> 1.4)
   sinatra-contrib
   slim

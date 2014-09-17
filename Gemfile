@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 ruby "2.1.2"
-gem "sinatra"
+gem "sinatra", "~> 1.4"
 gem "slim"
-gem 'bootstrap-sass', '~> 3'
+gem "sass", "~> 3.4"
 gem "mongoid"
 gem "redcarpet"
 
