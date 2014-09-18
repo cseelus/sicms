@@ -2,7 +2,7 @@
 
 Small and basic Ruby CMS using
 - Sinatra
-- Mongo DB.
+- MongoDB.
 - Markdown and Slim
 - SASS
 - Rack Livereload 
