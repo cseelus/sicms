@@ -1,11 +1,11 @@
 development:
-  sessions:
+  clients:
     default:
-      database: cms
+      database: sicms
       hosts:
         - localhost:27017
 production:
-  sessions:
+  clients:
     default:
       uri: <%= ENV['MONGOHQ<em>URL'] %>
       options:
